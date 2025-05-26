@@ -5,8 +5,61 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Stopwatch"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+       Title="Stopwatch" Height="350" Width="400">
     <Grid>
+        <TabControl>
+            <TabItem Header="Секундомер">
+                <Grid Margin="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
 
+                    <TextBlock x:Name="StopwatchDisplay" Grid.Row="0" 
+                               Text="00:00:00.000" 
+                               FontSize="36" 
+                               HorizontalAlignment="Center" 
+                               Margin="0,20"/>
+
+                    <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20">
+                        <Button x:Name="StartButton" Content="Старт" Width="80" Margin="5" Click="StartButton_Click"/>
+                        <Button x:Name="StopButton" Content="Стоп" Width="80" Margin="5" Click="StopButton_Click" IsEnabled="False"/>
+                        <Button x:Name="ResetButton" Content="Сброс" Width="80" Margin="5" Click="ResetButton_Click"/>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Таймер">
+                <Grid Margin="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20">
+                        <TextBox x:Name="HoursTextBox" Width="40" Text="0" TextAlignment="Center"/>
+                        <TextBlock Text=":" Margin="5,0" VerticalAlignment="Center"/>
+                        <TextBox x:Name="MinutesTextBox" Width="40" Text="0" TextAlignment="Center"/>
+                        <TextBlock Text=":" Margin="5,0" VerticalAlignment="Center"/>
+                        <TextBox x:Name="SecondsTextBox" Width="40" Text="0" TextAlignment="Center"/>
+                    </StackPanel>
+
+                    <TextBlock Grid.Row="1" x:Name="TimerDisplay" 
+                               Text="00:00:00" 
+                               FontSize="36" 
+                               HorizontalAlignment="Center" 
+                               Margin="0,20"/>
+
+                    <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20">
+                        <Button x:Name="SetTimerButton" Content="Установить" Width="100" Margin="5" Click="SetTimerButton_Click"/>
+                        <Button x:Name="StartTimerButton" Content="Старт" Width="80" Margin="5" Click="StartTimerButton_Click" IsEnabled="False"/>
+                        <Button x:Name="StopTimerButton" Content="Стоп" Width="80" Margin="5" Click="StopTimerButton_Click" IsEnabled="False"/>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+        </TabControl>
     </Grid>
 </Window>
