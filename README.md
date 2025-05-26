@@ -1,18 +1,20 @@
-# Noname Project
+# Stopwatch
 
-![Noname Project](https://i.ibb.co/93tG9wvK/nnp.png)
+![Stopwatch](https://i.ibb.co/84Rvdffz/stopwatch.png)
 
-Nonane Project - неизвестно что мы делать будем, но что-то будем.
+Stopwatch - секундомер и таймер на C# WPF.
 
 ## Build status
 
 |Platform|Configurations|
 |---|---|
-|Windows|Release|
+|Windows|Debug / Mixed / Release|
 
 ## How to Build
 
 - Install Visual Studio 2022
+- Install C# WPF work environment
+- Build solution
 
 ## Developers
 
