@@ -147,7 +147,7 @@ sequenceDiagram
 ## 👨‍💻 Developers
 - [Dance Maniac](https://github.com/dancemaniac)
 - [Kirill910000](https://github.com/kirill910000)
-- [Artem](https://github.com/artem-dev)
+- [Artem](https://github.com/Stinnnaler)
 
 ## 📜 License
 MIT License. See [LICENSE](LICENSE) for full details.
