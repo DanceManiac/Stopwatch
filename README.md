@@ -18,22 +18,7 @@ Advanced WPF application featuring both stopwatch and countdown timer functional
 | Windows  | Debug / Mixed / Release  |
 
 ### How to Build
-1. **Prerequisites**:
-   - Install [Visual Studio 2022](https://visualstudio.microsoft.com/)
-   - Select ".NET Desktop Development" workload
-   - Include "C# WPF" components
-
-2. **Build Steps**:
-   ```bash
-   git clone https://github.com/your-repo/wpf-timer.git
-   cd wpf-timer
-   msbuild Stopwatch.sln /p:Configuration=Release
-   ```
-
-3. **Run Application**:
-   ```bash
-   .\bin\Release\net7.0-windows\Stopwatch.exe
-   ```
+See the [instructions](https://github.com/DanceManiac/Stopwatch/wiki/Инструкция-по-установке)
 
 ## 👨‍💻 Developers
 - [Dance Maniac](https://github.com/dancemaniac)
